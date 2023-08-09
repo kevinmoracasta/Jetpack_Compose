@@ -3,6 +3,7 @@
 #En esta actividad aprendí una variedad de cosas como las el cómo hacer que las funciones admitan composiciones usando el compensable, también el preview que es más que todo como un tipo de vista previa,
 
 @Preview(showBackground = true)
+
 @Composable
 fun PreviewMessageCard() {
 
