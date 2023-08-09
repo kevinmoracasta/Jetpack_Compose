@@ -110,10 +110,14 @@ object SampleData {
                     "It's so much fun!"
         )
 
-y el cómo aplicar animaciones a los mensajes al pulsar sobre ellos, por último le edité el color del aro que rodea la imagen que en sí hace la función de imagen de perfil, edite un poco el tamaño del texto y coloque una imagen propia, la cual tenía guarda tambien el nombre del perfil y el texto de perfil el color del fondo para tener un estilo blanco y negro.
+#y el cómo aplicar animaciones a los mensajes al pulsar sobre ellos, por último le edité el color del aro que rodea la imagen que en sí hace la función de imagen de perfil, edite un poco el tamaño del texto y coloque #una imagen propia, la cual tenía guarda tambien el nombre del perfil y el texto de perfil el color del fondo para tener un estilo blanco y negro.
+
 Surface(shape = MaterialTheme.shapes.large, shadowElevation = 1.dp) {
+
                 Text(
+                
                     text = msg.body,
+                    
                     modifier = Modifier.padding(all = 4.dp),
                     maxLines = if (isExpanded) Int.MAX_VALUE else 1,
                     style = MaterialTheme.typography.bodySmall)
