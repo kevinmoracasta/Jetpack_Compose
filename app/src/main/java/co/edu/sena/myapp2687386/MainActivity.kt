@@ -92,8 +92,10 @@ fun Comversation(messages: List<Message>){
 @Composable
 fun ConversationPreview(){
     MyApp2687386Theme{
+    Surface(color=MaterialTheme.colorScheme.scrim) {
         Comversation(SampleData.conversationSample)
-    }
+
+    }    }
 }
 
 @Preview(showBackground = true)
