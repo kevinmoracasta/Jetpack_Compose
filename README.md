@@ -16,8 +16,7 @@ fun PreviewMessageCard() {
             
         }
         
-    }
-    
+    }  
 }
 
 
