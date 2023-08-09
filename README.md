@@ -51,4 +51,34 @@ fun MessageCard(msg: Message) {
 }
 
 
-otra de las cosas que aprendí es que funciona más que todo por capas o sea una sobre la otra, así que si realizo varios textos o varias imágenes estas se copilaran en una sobre la otra así que por eso se usa el column también aprendí sobre marial desing ya para finalizar aprendí como hacer una lista de mensajes y el cómo aplicar animaciones a los mensajes al pulsar sobre ellos, por último le edité el color del aro que rodea la imagen que en sí hace la función de imagen de perfil, edite un poco el tamaño del texto y coloque una imagen propia, la cual tenía guarda tambien el nombre del perfil y el texto de perfil.
+otra de las cosas que aprendí es que funciona más que todo por capas o sea una sobre la otra, así que si realizo varios textos o varias imágenes estas se copilaran en una sobre la otra así que por eso se usa el column también aprendí sobre marial desing ya para finalizar aprendí como hacer una lista de mensajes
+
+package co.edu.sena.myapp2687386
+
+object SampleData {
+    // Sample conversation data
+    val conversationSample = listOf(
+        Message(
+            "Kevin",
+            "Test...Test...Test..."
+        ),
+        Message(
+            "Kevin",
+            "List of Android versions:\n" +
+                    "Android KitKat (API 19)\n" +
+                    "Android Lollipop (API 21)\n" +
+                    "Android Marshmallow (API 23)\n" +
+                    "Android Nougat (API 24)\n" +
+                    "Android Oreo (API 26)\n" +
+                    "Android Pie (API 28)\n" +
+                    "Android 10 (API 29)\n" +
+                    "Android 11 (API 30)\n" +
+                    "Android 12 (API 31)\n"
+        ),
+        Message(
+            "Kevin",
+            "I think Kotlin is my favorite programming language.\n" +
+                    "It's so much fun!"
+        ),
+
+y el cómo aplicar animaciones a los mensajes al pulsar sobre ellos, por último le edité el color del aro que rodea la imagen que en sí hace la función de imagen de perfil, edite un poco el tamaño del texto y coloque una imagen propia, la cual tenía guarda tambien el nombre del perfil y el texto de perfil el color del fondo para tener un estilo blanco y negro.
