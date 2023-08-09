@@ -27,6 +27,7 @@ import androidx.compose.ui.unit.dp
 import co.edu.sena.myapp2687386.ui.theme.MyApp2687386Theme
 import android.content.res.Configuration
 import android.view.textclassifier.ConversationAction
+import androidx.annotation.ColorRes
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -54,7 +55,7 @@ data class Message(val author: String,val body:String)
 fun MessageCard(msg: Message) {
 
     Row (modifier = Modifier.padding(all = 8.dp)){
-        Image(painter = painterResource(id = R.drawable.descarga__1_), contentDescription = "contact profile picture",modifier = Modifier
+        Image(painter = painterResource(id = R.drawable.descarga__2_), contentDescription = "contact profile picture",modifier = Modifier
             .size(40.dp)
             .clip(CircleShape)
         )
@@ -66,14 +67,15 @@ fun MessageCard(msg: Message) {
         Column (modifier = Modifier.clickable { isExpanded = !isExpanded }){
             Text(
             text = msg.author,
-            color = MaterialTheme.colorScheme.secondary,style= MaterialTheme.typography.titleSmall
+            color = MaterialTheme.colorScheme.inverseOnSurface,style= MaterialTheme.typography.titleSmall
             )
             Surface(shape = MaterialTheme.shapes.large, shadowElevation = 1.dp) {
                 Text(
                     text = msg.body,
                     modifier = Modifier.padding(all = 4.dp),
                     maxLines = if (isExpanded) Int.MAX_VALUE else 1,
-                    style = MaterialTheme.typography.bodySmall)
+                    style = MaterialTheme.typography.bodyLarge)
+
             }
         }
     }
@@ -95,7 +97,9 @@ fun ConversationPreview(){
     Surface(color=MaterialTheme.colorScheme.scrim) {
         Comversation(SampleData.conversationSample)
 
-    }    }
+    }
+    }
+
 }
 
 @Preview(showBackground = true)
