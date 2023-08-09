@@ -7,12 +7,19 @@
 @Composable
 
 fun PreviewMessageCard() {
+
     MyApp2687386Theme {
+    
         Surface {
+        
             MessageCard(Message("kevin","Es la vida  "))
+            
         }
+        
     }
+    
 }
+
 
 #para ver en si lo que se va haciendo en el proyecto, entre ello también aprendí como aplicar diseño tanto a la imagen como al texto al mismo tiempo aprendí a colocar una imagen
 @Composable
