@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyApp2687386Theme {
-                Surface(modifier = Modifier.fillMaxSize()) {
+                Surface(modifier = Modifier.fillMaxSize(),color=MaterialTheme.colorScheme.scrim) {
                     MessageCard(Message (author = "ken ", body = "supervision "))
                 }
         }
