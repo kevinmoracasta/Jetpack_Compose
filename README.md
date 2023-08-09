@@ -21,30 +21,50 @@ fun PreviewMessageCard() {
 
 
 #para ver en si lo que se va haciendo en el proyecto, entre ello también aprendí como aplicar diseño tanto a la imagen como al texto al mismo tiempo aprendí a colocar una imagen
+
 @Composable
+
 fun MessageCard(msg: Message) {
 
     Row (modifier = Modifier.padding(all = 8.dp)){
+    
         Image(painter = painterResource(id = R.drawable.descarga__1_), contentDescription = "contact profile picture",modifier = Modifier
+        
             .size(40.dp)
+            
             .clip(CircleShape)
+            
         )
+        
         Spacer(modifier = Modifier.width(1.dp))
+        
         var isExpanded by remember {mutableStateOf(false)}
+        
         Surface(){
+        
         }
 
         Column (modifier = Modifier.clickable { isExpanded = !isExpanded }){
+        
             Text(
+            
             text = msg.author,
+            
             color = MaterialTheme.colorScheme.secondary,style= MaterialTheme.typography.titleSmall
+            
             )
             Surface(shape = MaterialTheme.shapes.large, shadowElevation = 1.dp) {
+            
                 Text(
+                
                     text = msg.body,
+                    
                     modifier = Modifier.padding(all = 4.dp),
+                    
                     maxLines = if (isExpanded) Int.MAX_VALUE else 1,
+                    
                     style = MaterialTheme.typography.bodySmall)
+                    
             }
         }
     }
