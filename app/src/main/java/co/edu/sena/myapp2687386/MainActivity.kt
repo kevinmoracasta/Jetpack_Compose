@@ -55,7 +55,7 @@ data class Message(val author: String,val body:String)
 fun MessageCard(msg: Message) {
 
     Row (modifier = Modifier.padding(all = 8.dp)){
-        Image(painter = painterResource(id = R.drawable.descarga__2_), contentDescription = "contact profile picture",modifier = Modifier
+        Image(painter = painterResource(id = R.drawable.icone-utilisateur), contentDescription = "contact profile picture",modifier = Modifier
             .size(40.dp)
             .clip(CircleShape)
         )
