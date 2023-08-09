@@ -74,7 +74,6 @@ fun MessageCard(msg: Message) {
 otra de las cosas que aprendí es que funciona más que todo por capas o sea una sobre la otra, así que si realizo varios textos o varias imágenes estas se copilaran en una sobre la otra así que por eso se usa el column también aprendí sobre marial desing ya para finalizar aprendí como hacer una lista de mensajes
 
 package co.edu.sena.myapp2687386
-
 object SampleData {
     // Sample conversation data
     val conversationSample = listOf(
